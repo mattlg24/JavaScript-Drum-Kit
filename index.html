@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>JavaScript Drum Kit</title>
@@ -9,34 +10,47 @@
 
 <body>
   <div class="keys">
-    <div class="key">A
+    <div data-key="65"class="key">A
       <span>CLAP</span>
     </div>
-    <div class="key">S
+    <div data-key="83"class="key">S
       <span>HIHAT</span>
     </div>
-    <div class="key">D
+    <div data-key="68"class="key">D
       <span>KICK</span>
     </div>
-    <div class="key">F
+    <div data-key="70"class="key">F
       <span>OPENHAT</span>
     </div>
-    <div class="key">G
+    <div data-key="71"class="key">G
       <span>BOOM</span>
     </div>
-    <div class="key">H
+    <div data-key="72"class="key">H
       <span>RIDE</span>
     </div>
-    <div class="key">J
+    <div data-key="74"class="key">J
       <span>SNARE</span>
     </div>
-    <div class="key">K
+    <div data-key="75"class="key">K
       <span>TOM</span>
     </div>
-    <div class="key">L
+    <div data-key="76"class="key">L
       <span>TINK</span>
     </div>
   </div>
+
+<audio data-key="65" src="sounds/hi.m4a"></audio>
+<audio data-key="83" src="sounds/my.m4a"></audio>
+<audio data-key="68" src="sounds/name.m4a"></audio>
+<audio data-key="70" src="sounds/is.m4a"></audio>
+<audio data-key="71" src="sounds/matt.m4a"></audio>
+<audio data-key="72" src=""></audio>
+<audio data-key="74" src=""></audio>
+<audio data-key="75" src=""></audio>
+<audio data-key="76" src=""></audio>
+
+</audio>
+
 </body>
 
 </html>
