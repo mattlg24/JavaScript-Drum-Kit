@@ -23,7 +23,7 @@ body {
   margin: .5rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
-  transition: all 1.07s;
+  transition: all .07s;
   width: 50px;
   text-align: center;
   color: white;
@@ -40,7 +40,7 @@ span {
 }
 
 .playing {
-  transform: scale(2)
+  /*transform: scale(1.1)*/
   border-color: #ffc600;
   box-shadow: 0 0 10px #ffc600
 }
