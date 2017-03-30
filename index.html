@@ -1,55 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <script type="text/javascript" src="app.js"></script>
-    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js"></script>
     <title>JavaScript Drum Kit</title>
 </head>
 
 <body>
-  <div class="keys">
-    <div data-key="65"class="key">A
-      <span class="sound">CLAP</span>
-    </div>
-    <div data-key="83"class="key">S
-      <span class="sound">HIHAT</span>
-    </div>
-    <div data-key="68"class="key">D
-      <span class="sound">KICK</span>
-    </div>
-    <div data-key="70"class="key">F
-      <span class="sound">OPENHAT</span>
-    </div>
-    <div data-key="71"class="key">G
-      <span class="sound">BOOM</span>
-    </div>
-    <div data-key="72"class="key">H
-      <span class="sound">RIDE</span>
-    </div>
-    <div data-key="74"class="key">J
-      <span class="sound">SNARE</span>
-    </div>
-    <div data-key="75"class="key">K
-      <span class="sound">TOM</span>
-    </div>
-    <div data-key="76"class="key">L
-      <span class="sound">TINK</span>
-    </div>
-  </div>
 
-<audio data-key="65" src="sounds/hi.m4a"></audio>
-<audio data-key="83" src="sounds/my.m4a"></audio>
-<audio data-key="68" src="sounds/name.m4a"></audio>
-<audio data-key="70" src="sounds/is.m4a"></audio>
-<audio data-key="71" src="sounds/matt.m4a"></audio>
-<audio data-key="72" src=""></audio>
-<audio data-key="74" src=""></audio>
-<audio data-key="75" src=""></audio>
-<audio data-key="76" src=""></audio>
+    <div class="keys">
+        <div data-key="65" class="key">A
+            <span class="sound">CLAP</span>
+        </div>
+        <div data-key="83" class="key">S
+            <span class="sound">HIHAT</span>
+        </div>
+        <div data-key="68" class="key">D
+            <span class="sound">KICK</span>
+        </div>
+        <div data-key="70" class="key">F
+            <span class="sound">OPENHAT</span>
+        </div>
+        <div data-key="71" class="key">G
+            <span class="sound">BOOM</span>
+        </div>
+        <div data-key="72" class="key">H
+            <span class="sound">RIDE</span>
+        </div>
+        <div data-key="74" class="key">J
+            <span class="sound">SNARE</span>
+        </div>
+        <div data-key="75" class="key">K
+            <span class="sound">TOM</span>
+        </div>
+        <div data-key="76" class="key">L
+            <span class="sound">TINK</span>
+        </div>
+    </div>
 
-</audio>
+    <audio data-key="65" src="sounds/hi.m4a"></audio>
+    <audio data-key="83" src="sounds/my.m4a"></audio>
+    <audio data-key="68" src="sounds/name.m4a"></audio>
+    <audio data-key="70" src="sounds/is.m4a"></audio>
+    <audio data-key="71" src="sounds/matt.m4a"></audio>
+    <audio data-key="72" src=""></audio>
+    <audio data-key="74" src=""></audio>
+    <audio data-key="75" src=""></audio>
+    <audio data-key="76" src=""></audio>
+
+    <!-- <script>
+      function removeTransition(e) {
+        if (e.propertyName !== 'transform') return;
+        e.target.classList.remove('playing');
+      }
+      function playSound(e) {
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+        if (!audio) return;
+        key.classList.add('playing');
+        audio.currentTime = 0;
+        audio.play();
+      }
+      const keys = Array.from(document.querySelectorAll('.key'));
+      keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+      window.addEventListener('keydown', playSound);
+    </script> -->
 
 </body>
 
